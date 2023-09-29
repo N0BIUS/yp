@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6EAFC12-A373-4147-84E3-3EE6ACEFC660}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Система_управления_библиотекой</RootNamespace>
+    <AssemblyName>Система управления библиотекой</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORSQL.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Выдача добавить.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Выдача добавить.Designer.cs">
+      <DependentUpon>Выдача добавить.cs</DependentUpon>
+    </Compile>
+    <Compile Include="выдача редактирование строки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="выдача редактирование строки.Designer.cs">
+      <DependentUpon>выдача редактирование строки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Выдача.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Выдача.Designer.cs">
+      <DependentUpon>Выдача.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Главное меню.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Главное меню.Designer.cs">
+      <DependentUpon>Главное меню.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Издательства редакция строки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Издательства редакция строки.Designer.cs">
+      <DependentUpon>Издательства редакция строки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Издательства.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Издательства.Designer.cs">
+      <DependentUpon>Издательства.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Каталог книг.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Каталог книг.Designer.cs">
+      <DependentUpon>Каталог книг.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Книги редакция строки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Книги редакция строки.Designer.cs">
+      <DependentUpon>Книги редакция строки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Книги.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Книги.Designer.cs">
+      <DependentUpon>Книги.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Редакция.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Редакция.Designer.cs">
+      <DependentUpon>Редакция.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Сотрудники редакция строки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Сотрудники редакция строки.Designer.cs">
+      <DependentUpon>Сотрудники редакция строки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Сотрудники.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Сотрудники.Designer.cs">
+      <DependentUpon>Сотрудники.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Читатели редакция строки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Читатели редакция строки.Designer.cs">
+      <DependentUpon>Читатели редакция строки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Читатели%28редакция%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Читатели%28редакция%29.Designer.cs">
+      <DependentUpon>Читатели%28редакция%29.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Выдача добавить.resx">
+      <DependentUpon>Выдача добавить.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="выдача редактирование строки.resx">
+      <DependentUpon>выдача редактирование строки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Выдача.resx">
+      <DependentUpon>Выдача.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Главное меню.resx">
+      <DependentUpon>Главное меню.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Издательства редакция строки.resx">
+      <DependentUpon>Издательства редакция строки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Издательства.resx">
+      <DependentUpon>Издательства.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Каталог книг.resx">
+      <DependentUpon>Каталог книг.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Книги редакция строки.resx">
+      <DependentUpon>Книги редакция строки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Книги.resx">
+      <DependentUpon>Книги.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Редакция.resx">
+      <DependentUpon>Редакция.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Сотрудники редакция строки.resx">
+      <DependentUpon>Сотрудники редакция строки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Сотрудники.resx">
+      <DependentUpon>Сотрудники.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Читатели редакция строки.resx">
+      <DependentUpon>Читатели редакция строки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Читатели%28редакция%29.resx">
+      <DependentUpon>Читатели%28редакция%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
